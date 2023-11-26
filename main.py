@@ -37,7 +37,7 @@ for scraped_meme in os.listdir('memes'):
     image_file_descriptor = open('memes/' + scraped_meme, 'rb')
     files = {'image': image_file_descriptor}
     headers = {
-        'X-Api-Key': 'W3BKxC0/xALBTD8Ml//IiQ==VchG1v1bJZ4gJCu6'
+        'X-Api-Key': 'YOUR API KEY'
     }
     r = requests.post(api_url, files=files, headers=headers)
     # print(r.json())
